@@ -10,7 +10,7 @@
 :root {
   --font-primary: 'Aclonica', sans-serif;
   --font-secondary: 'Yatra One', cursive;
-  --font-code: 'Meddon', cursive;
+  --font-code: 'Roboto', monospace;
   --bg-color: #000000;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
@@ -36,10 +36,11 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
+
 
 /* HEADER */
 
@@ -60,6 +61,9 @@ header .container {
 }
 
 /* BUTTONS */
+
+
+
 
 .btn {
   display: inline-block;
@@ -142,8 +146,12 @@ section {
   line-height: 1;
   border-radius: 0 0 4px 4px;
 }
-
+h3 {
+  text-align: center;
+}
 .countdown h1 {
+  background-image: url("../images/03.svg");
+  background-repeat: no-repeat;
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
@@ -152,16 +160,19 @@ section {
 }
 
 .countdown p {
+  background-image: url("../images/01.svg");
+  background-repeat: no-repeat;
   font-size: 1.1rem;
   font-family: var(--font-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
+
 
 /* OWNER STYLES */
 
 .owner-status {
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -183,4 +194,64 @@ section {
     font-size: 1rem;
   }
 }
- 
+
+.faq {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: top -2% left -5%;
+  padding-top: 50px;
+}
+
+.collapsible-list {
+  max-width: 80%;
+  margin: 60px auto;
+}
+
+.collapsible-list__button {
+  background-image: url("../images/omr.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #000000;
+
+  color: #121212;
+  cursor: pointer;
+  padding: 15px 1px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.active,
+.collapsible-list__button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.collapsible-list__content {
+  padding: 10px 50px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+  font-size: 100%;
+  text-align: left;
+  font: weight 100px;
+  
+}
+
+
+.collapsible-list hr {
+  color: rgba(64, 71, 86, 0.6);
+}
+
+
