@@ -3,3 +3,8 @@ node_modules
 package-lock.json
 # Local Netlify folder
 .netlify
+
+## Team Essentials ##
+#####################
+.vscode/settings.json
+.vscode/team-essentials/state.json
