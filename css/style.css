@@ -28,9 +28,8 @@ Html{font-size:62.5%(10/16*100%)}
 body {
   
   background-color:#000000;
-  
   flex-flow: column;
-  height: 100vh;
+  height: 90vh;
   color: var(--font-color);
   font-family: var(--font-primary);
 }
@@ -133,10 +132,9 @@ body {
 
 .second-section
 {
-  padding: 6vh 0;
-  height: 900px;
+  
   position: relative;
-  top: -50px;
+  
 }
 
 .second-section-title{
@@ -161,8 +159,7 @@ body {
 }
 
 .second-section .second-section-top{
-  padding: 20vh 0;
-  height: 65vh;
+  height: 90vh;
   width: 1700px;
   display: flex;
   align-items: center;
@@ -177,7 +174,8 @@ body {
   flex-direction: column;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 1rem .1rem;
+  padding: 1rem 0.1rem;
+  
 }
 
 
@@ -363,11 +361,15 @@ span{
   background-repeat: no-repeat;
   background-position: top -2% left -5%;
   padding-top: 50px;
+  
+  
 }
 
 .collapsible-list {
   max-width: 80%;
   margin: 60px auto;
+  padding: 100px;
+  
 }
 
 p {
